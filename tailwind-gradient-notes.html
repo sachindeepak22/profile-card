@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Tailwind Gradient Notes</title>
+  <style>
+    body{font-family:Arial,sans-serif;line-height:1.5;padding:28px;color:#0f172a}
+    h1{margin:0 0 8px;font-size:24px}
+    h2{margin:20px 0 8px;font-size:18px}
+    pre{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px;white-space:pre-wrap}
+    .small{color:#475569}
+  </style>
+</head>
+<body>
+  <h1>Tailwind Gradient Quick Notes</h1>
+  <p class="small">Linear, radial, conic (prism), and glassmorphism patterns</p>
+
+  <h2>1) Linear Gradient</h2>
+  <pre>bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-500</pre>
+
+  <h2>2) Radial Gradient</h2>
+  <pre>bg-[radial-gradient(circle_at_top_left,_#818cf8,_#1e1b4b)]</pre>
+
+  <h2>3) Conic / Prism Style</h2>
+  <pre>bg-[conic-gradient(from_180deg_at_50%_50%,_#6366f1,_#a855f7,_#06b6d4,_#6366f1)]</pre>
+
+  <h2>4) Glassmorphism Card</h2>
+  <pre>bg-white/20 backdrop-blur-md border border-white/30 shadow-xl rounded-2xl</pre>
+
+  <h2>5) Gradient Text</h2>
+  <pre>bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent</pre>
+
+  <h2>6) Gradient Button</h2>
+  <pre>text-white bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-indigo-500 hover:to-blue-400</pre>
+
+  <h2>Rule</h2>
+  <pre>Neutral base + single accent keeps UI clean and professional.</pre>
+</body>
+</html>
