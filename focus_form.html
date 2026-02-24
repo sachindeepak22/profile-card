@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Practice</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen w-full flex items-center justify-center bg-slate-100">
+    <div class="w-[90%] sm:max-w-sm sm:p-6 p-4 rounded-2xl border bg-white border-slate-200 shadow-sm md:shadow-lg md:gap-3 flex flex-col items-center gap-2">
+        <h2 class="text-xl text-slate-900 font-bold">Button</h2>
+        <button type="button" class="text-white w-full py-2 sm:py-2.5 bg-slate-900 hover:bg-slate-700 active:scale-[0.98] focus-visible:bg-slate-700 focus-visible:ring-2 focus-visible:outline-none disabled disabled:opacity-50 disabled:cursor-not-allowed rounded-lg">Focus ring</button>
+
+        <hr class="w-full">
+        <h2 class="text-xl text-slate-900 font-bold">Form</h2>
+        <input type="text" name="name" id="name" placeholder="Enter your name" class="py-2 text-sm focus-visible:outline-none w-full px-3 rounded-md border border-slate-300 focus-visible:ring-offset-2">
+        <button type="button" class="w-full text-white bg-slate-800 py-2 sm-py-2 5 hover:bg-slate-600 active:scale-[0.98] focus-visiable:ring-1 focus-visible:outline-none rounded-lg">Submit</button>
+    </div>
+    
+</body>
+</html>
