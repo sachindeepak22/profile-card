@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Practice</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen w-full flex items-center justify-center bg-slate-100">
+    <div class="w-[96%] sm:max-w-md bg-white p-4 sm:p-6 rounded-2xl shadow-sm sm:shadow-lg flex flex-col items-center">
+        <h2 class="text-2xl text-slate-900 font-bold">Sign up Form</h2>
+        <form class="flex flex-col items-center p-2 sm:p-4 gap-2 sm:gap-3 w-full">
+            <div class="w-full">
+                <input type="text"
+                    class="peer bg-slate-50 font-semibold w-full text-slate-600 p-2 rounded-md border border-slate-300 focus-visible:outline-none text-base focus-visible:ring-2 focus-visible:ring-slate-400"
+                    placeholder="Enter Name" required>
+                <p class="text-sm peer-user-invalid:text-red-500 hidden peer-user-invalid:block">Enter your name</p>
+            </div>
+            <div class="w-full">
+                <input type="email"
+                    class="peer bg-slate-50 font-semibold w-full text-slate-600 p-2 rounded-md border border-slate-300 focus-visible:outline-none text-base focus-visible:ring-2 focus-visible:ring-slate-400"
+                    placeholder="Enter Email" required>
+                <p class="text-sm peer-user-invalid:text-red-500 hidden peer-user-invalid:block">Enter your email</p>
+            </div>
+            <div class="w-full">
+                <input type="password"
+                    class="peer bg-slate-50 font-semibold w-full text-slate-600 p-2 rounded-md border border-slate-300 focus-visible:outline-none text-base focus-visible:ring-2 focus-visible:ring-slate-400"
+                    placeholder="Enter Password" required>
+                <p class="text-sm peer-user-invalid:text-red-500 hidden peer-user-invalid:block">Enter your password</p>
+            </div>
+            <div class="w-full">
+                <input type="submit" value="Submit" class="w-full bg-slate-800 text-white font-semibold shadow-sm sm:shadow-lg py-2 sm:py-2.5 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 hover:bg-slate-700 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

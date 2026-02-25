@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Practice</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen w-full bg-slate-100">
+    <nav class="relative top-0 w-full bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold">Brand</a>
+            <button id="menuBtn" type="button" class="block md:hidden" aria-label="Open menu">☰</button>
+            <ul id="mobileMenu" class="absolute top-full left-0 w-full bg-white border-b border-slate-200 p-4 flex flex-col gap-3 md:static md:w-auto md:border-0 md:p-0 md:flex-row md:items-center hidden md:flex items-center gap-4">
+                <li class="text-base text-slate-500 font-semibold hover:text-indigo-600"><a href="#">Home</a></li>
+                <li class="text-base text-slate-500 font-semibold hover:text-indigo-600"><a href="#">About</a></li>
+                <li class="text-base text-slate-500 font-semibold hover:text-indigo-600"><a href="#">Contact</a></li>
+                <li><button class=" px-3 py-1.5 rounded-lg shadow-md font-bold bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 transition-colors"  type="button">Login</button></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+</html>
